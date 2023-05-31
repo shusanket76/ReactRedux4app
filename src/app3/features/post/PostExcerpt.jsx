@@ -4,7 +4,6 @@ import TimeAgo from "./TimeAgo";
 import Reaction from "./Reaction";
 
 const PostExcerpt = ({ post }) => {
-  
   return (
     <>
       <article>

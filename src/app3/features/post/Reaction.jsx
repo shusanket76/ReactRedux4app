@@ -2,8 +2,8 @@ import { reactionAdded } from "./postSlice";
 import { useDispatch } from "react-redux";
 
 const rEmoji = {
-  like: "❤️",
-  dislike: "👎",
+  "like": "❤️",
+  "dislike": "👎",
 };
 
 import React from "react";
