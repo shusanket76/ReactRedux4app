@@ -1,20 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app4/App.jsx";
-import { store } from "./app4/app/store.js";
-import { Provider } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { fetchPosts } from "./app4/features/post/postSlice.js";
+import App from "./app5/App.jsx";
+import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
+import { apiSlice } from "./app5/features/api/apiSlice.js";
 
-store.dispatch(fetchPosts());
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/*" element={<App />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </Provider>
+    <ApiProvider api={apiSlice}>
+      <App />
+    </ApiProvider>
   </React.StrictMode>
 );
