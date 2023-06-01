@@ -11,7 +11,7 @@ const PostExcerpt = ({ post }) => {
       <article>
         <h2 onClick={() => navigate(`${post.id}`)}>SINGLE PAGE</h2>
         <h1>{post.title}</h1>
-        <p>{post.content}</p>
+        <p>{post.body}</p>
         <p>
           <TimeAgo timestamp={post.date} />
         </p>

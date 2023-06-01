@@ -2,12 +2,13 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAllUsers } from "../users/usersSlice";
 import { addNewPost } from "./postSlice";
+import { useNavigate } from "react-router-dom";
 
 import React from "react";
 
 const AddForm = () => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [userId, setuserId] = useState("");
@@ -26,6 +27,7 @@ const AddForm = () => {
         setTitle("");
         setContent("");
         setuserId("");
+        navigate("/post")
       }
     } catch (error) {
       console.error("FAILED TO SAVE THE POST", error);
