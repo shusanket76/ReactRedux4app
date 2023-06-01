@@ -2,24 +2,6 @@
   "todos": [
     {
       "userId": 1,
-      "id": 1,
-      "title": "WAKE UP",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 2,
-      "title": "BRUSH",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 3,
-      "title": "WASH",
-      "completed": false
-    },
-    {
-      "userId": 1,
       "id": 4,
       "title": "DRINK",
       "completed": false
@@ -38,52 +20,15 @@
     },
     {
       "userId": 1,
-      "id": 7,
       "title": "CODE",
-      "completed": false
+      "completed": false,
+      "id": 7
     },
     {
       "userId": 1,
-      "id": 8,
-      "title": "DANCE",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 9,
-      "title": "SING",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 10,
-      "title": "TALK",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 11,
-      "title": "SLEEP?",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 12,
-      "title": "COOK",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 13,
-      "title": "BATHROOM?",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 14,
-      "title": "REPEAT?",
-      "completed": false
+      "title": "Repeat",
+      "completed": false,
+      "id": 8
     }
-    
   ]
 }
